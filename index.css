@@ -7,7 +7,7 @@
 body{
     margin: auto;
     font-size: 16px;
-    background-color: rgb(170, 167, 167);
+    background: #f2fdff;
 }
 header{
     font-size: 16px;
@@ -23,10 +23,8 @@ header h3{
 }
 /* *****************the end of header*********************** */
 .display{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 .display .blockone,.display .blocktree{
     background-color:white;
@@ -34,39 +32,39 @@ header h3{
 /* *************************block one********************************* */
 .display .blockone{
     font-size: 16px;
-    width: 20%;
+    width: 250px;
     z-index: 10;
     border: rgba(0, 0, 0, 0.685);
     box-shadow:  0px 0px 5px 0px  rgba(0, 0, 0, 0.486);
 }
-.display .blocktwo{
-    width: 55%;
-    background: #f2fdff;
-  }
 .display .blocktree{
-    width: 25%;
+    width: 250px;
 }
-.blockone .dashboard{
+.blockone .dashboard p,.dashboard_schoolfees p{
+    margin: 5px;
+}
+.blockone .dashboard,.dashboard_schoolfees{
     display: flex;
-    font-size: 20px;
     gap: 10px;
 }
-.blockone .dashboard:hover{
-    width: 100%;
-    line-height: 2;
-    height: 40px;
+.dashboard_schoolfees{
     border-top-left-radius: 3px;
-    border-bottom-left-radius:3px ;
+    border-bottom-left-radius:3px;
     background-color: #e3f3ff;
     border-left: 3px solid rgb(58, 100, 254);
 }
-.blockone .dashboard img{
+.blockone .dashboard:hover{   
+    border-top-left-radius: 3px;
+    border-bottom-left-radius:3px;
+    background-color: #e3f3ff;
+}
+.blockone .dashboard img,.dashboard_schoolfees img{
     width: 30px;
     height: 20px;
 }
 .display .blockone .grid{
     display: grid;
-    gap: 20px;
+    gap: 10px;
     margin: 40px auto;
     margin-left: 10%;
 }
@@ -112,7 +110,7 @@ header h3{
     font-size: 30px
 }
 .blocktree aside .aide{
-    width: 250px;
+    width: 220px;
     height: 40px;
     margin-top: 30px;
     border: none;
@@ -122,12 +120,11 @@ header h3{
     color: rgb(25, 113, 207);
 }
 .blocktree div p{
-    margin: 10px;
+    margin:10px;
 }
 .blocktree div{
-    width: 250px;
-    height: 80px;
-    margin: 20px auto;
+    width: 220px;
+    margin: 10px auto;
     border-radius: 20px;
     border:1px solid rgba(0, 0, 0, 0.245);
     box-shadow:  0px 2px 3px 3px  rgba(47, 47, 47, 0.375);
