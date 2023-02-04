@@ -39,7 +39,7 @@ header h3{
     box-shadow:  0px 0px 5px 0px  rgba(0, 0, 0, 0.486);
 }
 .display .blocktree{
-     /* width: 250px;  */
+     /* width: 250px;   */
 }
 .blockone .dashboard p,.dashboard_schoolfees p{
     margin: 5px;
@@ -137,8 +137,7 @@ thead tr th{
    width: 150px;
    height: 100px;
    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px black;
-
+   box-shadow: 0px 0px 10px 0px black;
 }
 .blocktwo .statistic_div_display{
     display: flex;
