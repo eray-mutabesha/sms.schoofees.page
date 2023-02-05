@@ -103,7 +103,7 @@ header h3{
     margin: 30px;
 }
 table{
-    width: 80%;
+    width: 100vh;
     margin: auto;
     border-collapse: collapse;
 }
@@ -178,14 +178,26 @@ thead tr th{
 }
 @media (max-width:979px){
     .display .blocktwo{
-       width:400px;
+       width:600px;
    } 
+   .display .blocktree{
+    display:none;
 }
-@media (max-width:895px){
-    .display .blocktree{
-        display:none;
-    }
+}
+@media (max-width:845px){
     .display .blocktwo{
-       width:500px;
-   } 
+        width:500px;
+    } 
+}
+@media (max-width:745px){
+    .display .blocktwo{
+        width:100%;
+    } 
+    .display .blockone{
+        display: none;
+    }
+}
+@media (max-width:690px){
+    
+
 }
