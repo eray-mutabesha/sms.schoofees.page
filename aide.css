@@ -1,0 +1,58 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    font-size: 16px;
+    background: #f2fdff;
+}
+header{
+    font-size: 16px;
+    width: 100%;
+    height:50px;
+    color: white;
+    background-color: rgb(2, 2, 46);
+    border-bottom: 3px solid white;
+}
+header h3{
+    line-height: 2.5;
+    margin-left: 100px;
+}
+/* ********************************block tree**************************************** */
+.blocktree{
+    box-shadow:  0px 0px 5px 0px  rgba(0, 0, 0, 0.342);
+}
+.blocktree h1{
+    font-size: 30px
+}
+.blocktree aside .aide{
+    background: #f2fdff;
+    width: 200px;
+    height: 40px;
+    margin-top: 0px;
+    border: none;
+    box-shadow: none;
+}
+.blocktree div p strong{
+    color: rgb(25, 113, 207);
+}
+.blocktree div p{
+    margin:10px;
+}
+.blocktree div{
+    background-color: white;
+    width: 300px; 
+    margin: 20px auto;
+    border-radius: 20px;
+    border:1px solid rgba(0, 0, 0, 0.245);
+    box-shadow:  0px 2px 3px 3px  rgba(47, 47, 47, 0.375);
+}
+/*********************media queries*************************** */
+@media(max-width:345px) {
+    .blocktree div{
+        width: 250px;
+    } 
+}

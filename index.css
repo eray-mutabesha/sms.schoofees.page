@@ -101,7 +101,7 @@ header h3{
     padding: 30px;
 }
 table{
-    width: 100vh;
+    width: 80%;
     margin: auto;
     border-collapse: collapse;
 }
@@ -183,6 +183,7 @@ thead tr th{
 @media (max-width:979px){
     .display .blocktwo{
         width: 100%;
+        
     } 
    .display .blocktree{
     display:none;
@@ -190,8 +191,11 @@ thead tr th{
 }
 @media (max-width:796px){
     .display .blocktwo{
-        width: 400px;
+        width: 90%;
     } 
+    table{
+        width: 90%;
+    }
 }
 @media (max-width:745px){
     .display .blockone{
@@ -203,12 +207,25 @@ thead tr th{
 }
 @media (max-width:547px){
     .blocktwo div{
-        padding: 10px;
+         padding: 10px;
     }
 }
 @media (max-width:505px){
-    .display .blocktwo{
-        width:500px;
-    } 
-
+    .blocktwo .statistic_div_display{
+        display: grid;
+        gap: 20px;
+        justify-content: center;
+        grid-template-columns: auto auto;
+    }
+    table{
+        width: 90%;
+    }
+}
+@media (max-width:345px){
+    .blocktwo .statistic_div_display{
+        grid-template-columns: auto;
+    }
+    table{
+        width: 100%;
+    }
 }
