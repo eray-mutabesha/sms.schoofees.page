@@ -243,7 +243,6 @@ thead tr th{
 .blockone a{
     color: black;
     text-decoration: none;
-
 }
 }
 @media (max-width:796px){
@@ -256,7 +255,11 @@ thead tr th{
 }
 @media (max-width:745px){
     .display .blockone{
-        display: none;
+        z-index: 1;
+        transition: 0.5 ease;
+        position: absolute;
+        margin-left: -100%;
+        transition: 1s;
     }
     .display .blocktwo{
         width: 100%;
@@ -273,6 +276,16 @@ thead tr th{
     header{
         justify-content: space-around;
     }
+   
+ 
+
+
+
+
+
+
+
+
 
 
 

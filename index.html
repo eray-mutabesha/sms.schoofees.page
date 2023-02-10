@@ -167,4 +167,15 @@
         </section>
     </section>
 </body>
+<script>
+    const section =document.querySelector("section");
+    const img =document.querySelector("header img");
+    const bck = document.querySelector(".display .blockone");
+    img.addEventListener("click",()=>{
+        bck.style.marginLeft="0";
+    })
+    section.addEventListener("click",(e)=>{
+        bck.style.marginLeft="-100%";
+    })
+</script>
 </html>
