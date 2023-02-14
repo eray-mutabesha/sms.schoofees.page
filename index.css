@@ -23,9 +23,35 @@ header h3{
     line-height: 2.5;
     margin-left: 100px;
 }
-header img{
+header .menu{
     width: 30px;
      display: none; 
+}
+header .blockone{
+   
+   position: absolute;
+   left: 0; 
+   z-index: 1;
+   background-color: white;
+   color: black;
+   top: 50px;
+   height:520px;
+}
+header .btn-nav {
+    display: flex;
+    background:rgb(2, 2, 46);
+    border-radius: 30px;
+    width: 160px;
+    height: 40px;
+    justify-content:center;
+    gap: 10px;
+    margin-top: -30px;
+    padding: 5px;
+}
+header .grid{
+    display: grid;
+    margin: auto;
+    margin-left: 10%;
 }
 /* *****************the end of header*********************** */
 .display{
@@ -36,21 +62,21 @@ header img{
     background-color:white;
 }
 /* *************************block one********************************* */
-.display .blockone{
+.display .blockone,header .blockone{
     font-size: 16px;
     width: 250px;
     z-index: 10;
     border: rgba(0, 0, 0, 0.685);
     box-shadow:  0px 0px 5px 0px  rgba(0, 0, 0, 0.486);
 }
-.blockone .dashboard p,.dashboard_schoolfees p,.blockone .dashboard_aide p{
+ .dashboard p,.dashboard_schoolfees p,.blockone .dashboard_aide p{
     margin: 5px;
 }
-.blockone .dashboard,.dashboard_schoolfees,.blockone .dashboard_aide{
+.blockone .dashboard,.dashboard_schoolfees,.blockone .dashboard_aide,header .dashboard{
     display: flex;
     gap: 10px;
 }
-.dashboard_schoolfees{
+.dashboard_schoolfees,header .dashboard_schoolfees{
     border-top-left-radius: 3px;
     border-bottom-left-radius:3px;
     background-color: #e3f3ff;
@@ -72,7 +98,7 @@ header img{
 .blockone .dashboard img,.dashboard_schoolfees img,.blockone .dashboard_aide img{
     width: 30px;
 }
-.display .blockone .grid{
+.display .blockone .grid,header .grid{
     display: grid;
     gap: 10px;
     margin: 40px auto;
@@ -87,7 +113,7 @@ header img{
     justify-content:center;
     gap: 10px;
     margin-left: 10%;
-    margin-top: 290px;
+    margin-top: 40%;
 }
 .btn-nav button{
     font-size: 20px;
@@ -97,10 +123,8 @@ header img{
     color: white;
     border: none;
 }
-.btn-nav img{
-    margin-top: 10px; 
+.btn-nav img,header img{
     width: 30px;
-    height: 20px;
 }
 /* **************************block two********************************* */
  .blocktwo h5{
@@ -157,7 +181,7 @@ thead tr th{
     justify-content: center;
 }
 .blocktwo .statistic_div div{
-   
+
     margin: -20px;
     padding: 0px;
 }
@@ -212,11 +236,19 @@ thead tr th{
     margin:10px;
 }
 .blocktree div{
+    font-size: small;
     width: 220px; 
     margin: 10px auto;
     border-radius: 20px;
     border:1px solid rgba(0, 0, 0, 0.245);
     box-shadow:  0px 2px 3px 3px  rgba(47, 47, 47, 0.375);
+}
+.mobile-menu{
+    z-index: 1;
+   left:0;
+    transition: 0.5 ease;
+    position: absolute;
+    transition: 1s;
 }
 /* *********************************** */
 @media (max-width:1078px){
@@ -255,19 +287,16 @@ thead tr th{
 }
 @media (max-width:745px){
     .display .blockone{
-        z-index: 1;
-        transition: 0.5 ease;
-        position: absolute;
-        margin-left: -100%;
-        transition: 1s;
+        display: none;
     }
+   
     .display .blocktwo{
         width: 100%;
     } 
     header h3{
         line-height: 2.5;
     }
-    header img{
+    header .menu{
         margin: 5px;
         width: 30px;
         height: fit-content;
@@ -276,19 +305,14 @@ thead tr th{
     header{
         justify-content: space-around;
     }
-   
- 
-
-
-
-
-
-
-
-
-
-
-
+    header .blockone{
+        position: absolute;
+        margin-left: -100%;
+        transition: 1s;
+    }
+    header .mobile-menu{
+    margin-left: 0;
+   }
 
 }
 @media (max-width:505px){

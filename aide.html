@@ -8,7 +8,52 @@
     <title>Aide.sms</title>
 </head>
 <body>
-    <header><h3>SMS Zanner</h3></header>
+    <header>
+        <img class="menu" src="image/menu.png">
+        <h3>SMS Zanner</h3>
+        <section  class="blockone">
+            <nav class="grid">
+                <div class="dashboard">
+                    <p><img src="image/dashboard.png" alt="icone of dashboard"></p>
+                    <p>Dashboard</p>
+                </div>
+                <div class="dashboard">
+                    <p><img src="image/marksheet.png" alt="icone of courses"></p>
+                    <p>Courses schedule</p>
+                </div>
+                <div class="dashboard">
+                    <p><img src="image/marksheet.png" alt="iconen of marksheet "></p>
+                    <p>Marksheet</p>
+                </div>
+                <div class="dashboard_schoolfees">
+                    <p><img src="image/school_fees.png" alt="icone of school fees"></p>
+                    <p><strong>School fees</strong> </p>
+                </div>
+                <div class="dashboard">
+                    <p><img src="image/profile.jpeg" alt="icone profil"></p>
+                    <p>My Profil</p>
+                </div>
+                <div class="dashboard">
+                    <p><img src="image/library.png" alt="icone oflibrary"></p>
+                    <p>Library</p>
+                </div>
+                <div class="dashboard">
+                    <p><img src="image/logout.png" alt="icone oflogout"></p>
+                    <p>Annoussement</p>
+                </div>
+                <a href="aide.html">
+                    <div class="dashboard_aide">
+                        <p><img src="image/aide.png" alt="icone of logout"></p>
+                        <p><strong>#Aides</strong></p>
+                    </div>
+                </a>
+            </nav>
+            <nav class="btn-nav">
+                <p><img src="image/logout.png" alt="icone of logout"></p>
+                <button>logout</button>
+            </nav>
+        </section>
+    </header>
     <section  class="blocktree">
         <aside>
             <div class="aide">
@@ -34,5 +79,12 @@
             </div>
         </aside>  
     </section>
+    <script>
+        const img =document.querySelector(".menu");
+        const bck = document.querySelector("header .blockone");
+        img.addEventListener("click",()=>{
+            bck.classList.toggle("mobile-menu");
+        })
+    </script>
 </body>
 </html>
