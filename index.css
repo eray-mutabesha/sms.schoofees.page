@@ -307,8 +307,7 @@ thead tr th{
     header .menu{
         margin: 5px;
         width: 30px;
-        
-         display: flex; 
+        display: flex; 
     }
     header{
         justify-content: space-around;
