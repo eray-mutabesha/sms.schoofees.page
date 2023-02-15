@@ -26,7 +26,6 @@ header h3{
 }
 header .menu{
     width: 30px;
-    height: fit-content;
 }
 header .blockone{
    
@@ -42,12 +41,10 @@ header .btn-nav {
     display: flex;
     background:rgb(2, 2, 46);
     border-radius: 30px;
-    width: 160px;
-    height: 40px;
+    width: 100px;
+    
     justify-content:center;
     gap: 10px;
-    margin-top: -30px;
-    padding: 5px;
 }
 header .grid{
     display: grid;
@@ -112,16 +109,12 @@ header .grid{
     display: flex;
     background:rgb(2, 2, 46);
     border-radius: 30px;
-    width: 160px;
-    height: 40px;
     justify-content:center;
     gap: 10px;
     margin-left: 10%;
 }
 .btn-nav button{
-    font-size: 20px;
-    height: 20px;
-    line-height: 2;
+    font-size: 16;
     background:rgb(2, 2, 46) ;
     color: white;
     border: none;
