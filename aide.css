@@ -114,7 +114,7 @@ header .grid{
     justify-content:center;
     gap: 10px;
     margin-left: 10%;
-    margin-top: 40%;
+    /* margin-top: 40%; */
 }
 .btn-nav button{
     font-size: 20px;
